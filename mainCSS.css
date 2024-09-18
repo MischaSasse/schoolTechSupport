@@ -1,0 +1,10 @@
+body{
+    background-color: grey;
+    display:flex;
+    justify-content: center;
+}
+
+button{
+    scale: 200%;
+    margin: 10vh;
+}
