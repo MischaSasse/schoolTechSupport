@@ -2,7 +2,10 @@ let a = 0;
 
 function changeColor() {
     let color = ["lightskyblue", "linen", "cornflowerblue", "teal"];
+    document.getElementById("header").style.backgroundColor = color[a];
     document.getElementById("aside2").style.backgroundColor = color[a];
+    document.getElementById("footer").style.backgroundColor = color[a];
+    document.getElementById("aside1").style.backgroundColor = color[a];
     a++;
     if(a==color.length) a=0;
 }
@@ -16,7 +19,7 @@ function storeInput() {
     const input = document.getElementById("input1");
     const value = input.value;
     // console.log(list);
-    if(list.length == 10) {
+    if(list.length == 17) {
         return //msNote: added return, the moment the array hits 10, nothing else will happen
     }
     
