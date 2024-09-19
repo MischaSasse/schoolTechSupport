@@ -15,15 +15,15 @@ let list = [ ];
 function storeInput() {
     const input = document.getElementById("input1");
     const value = input.value;
-    list.push(value);
-    console.log(list);
-    if(list.length == 10) {
-        document.getElementById("input1").value = " ";
-
+    // console.log(list);
+    if(list.length >= 10) {
+        return //msNote: added return, the moment the array hits 10, nothing else will happen
     }
-
-
+    
+    
     clear();
+    list.push(value); //msNote: put push lower, else it would add to array, 
+                      //giving 11 items and then checking if it had 10 or more (it would only display 10 but have 11 items)
     showInput();
 }
 
