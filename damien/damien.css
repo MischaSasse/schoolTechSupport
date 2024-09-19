@@ -1,5 +1,71 @@
-body{
-    background-color: grey;
+* {
     margin: 0;
     padding: 0;
+}
+
+
+body{
+    display: grid;
+    grid-template: "header header aside2" 0.1fr
+                   "aside1 main aside2" 1fr
+                   "aside1 footer footer" 0.1fr
+                   / 0.2fr 0.6fr 0.2fr;
+    height: 100vh;
+    gap: 1rem;
+}
+
+header{
+    grid-area: header;
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title {
+    width: 55%;
+    text-align: end;
+}
+
+.title h1{
+    font-size: 3rem;
+}
+
+.link a{
+    padding: 1rem;
+}
+
+
+.aside1 {
+    grid-area: aside1;
+    background-color: steelblue;
+    padding: 1rem;
+    list-style-position: inside;
+}
+
+main {
+    grid-area: main;
+    background-color: steelblue;
+    padding: 1.5rem;
+}
+
+main section {
+    margin-bottom: 15%;
+}
+
+.aside2 {
+    grid-area: aside2;
+    background-color: steelblue;
+    padding: 1rem;
+    list-style-position: inside;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+    background-color: steelblue;
+    padding: 1.5rem;
 }
