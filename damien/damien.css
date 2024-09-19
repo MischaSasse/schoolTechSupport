@@ -43,6 +43,7 @@ header{
     background-color: teal;
     padding: 1rem;
     list-style-position: inside;
+
 }
 
 .aside1 h2 {
@@ -51,23 +52,44 @@ header{
     border-radius: 15px;
     margin-bottom: 10px;
 }
-#input {
+#input1 {
     height: 4rem;
-    width: 70%;
-    font-size: 1.125rem;
+    width: 65%;
+    font-size: 1rem;
     margin: 10px 5px 0px 0px;
     border-radius: 20px;
     border: none;
 }
 
-#button {
-    width: calc(30% - 0.85rem);
-    height: 4rem;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.25rem;
+#form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#addButton {
+    width: calc(30% - 0.85rem);
+    height: 4rem;
+    border-radius: 25%;
+    border: none;
+    font-size: 1rem;
+    background-color: steelblue;
+}
+
+.buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+#deleteButton {
+    width: 45%;
+    height: 2rem;
+}
+#removeButton {
+    width: 45%;
+    height: 2rem;
+
+}
 .notes1 {
     margin-top: 2rem;
     height: 20rem;

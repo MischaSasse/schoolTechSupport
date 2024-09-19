@@ -17,6 +17,11 @@ function storeInput() {
     const value = input.value;
     list.push(value);
     console.log(list);
+    if(list.length == 10) {
+        document.getElementById("input1").value = " ";
+
+    }
+
 
     clear();
     showInput();
@@ -28,6 +33,23 @@ function showInput() {
     })
 }
 
+
+// Als je de functie niet called, werkt het niet.
+function deleteInput() {
+    const input = document.getElementById("input1");
+    let remove = list.indexOf(input.value);
+    if(remove === -1){return}
+    list.splice(remove, 1);
+
+    clear();
+    showInput();
+}
 function clear() {
     document.getElementById("ulist").innerHTML = "";
+}
+
+function removeAll(){
+    list = [ ]
+    clear();
+    showInput();
 }

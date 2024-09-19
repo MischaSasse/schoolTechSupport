@@ -23,7 +23,7 @@
 </header>
 <aside class="aside1">
     <h2>Notes:</h2>
-    <section>
+    <section class="notesform">
         <form id="form">
             <input type="text" id="input1" placeholder="What's on your mind?">
             <!--Een button een type="button" geven. Anders herlaadt de pagina bij elke onclick. Heeft even geduurd ;)-->
@@ -34,6 +34,10 @@
         <ul id="ulist">
 
         </ul>
+    </section>
+    <section class="buttons">
+        <button id="deleteButton" onclick="deleteInput()" type="button">Delete -</button>
+        <button id="removeButton" onclick="removeAll()" type="button">Remove</button>
     </section>
 
 
@@ -62,7 +66,7 @@
         <li>2</li>
         <li>3</li>
     </ul>
-    <button onclick="changeColor()" id="colorButton">Change Color</button>
+    <button onclick="changeColor()" id="colorButton" type="button">Change Color</button>
 </aside>
 <footer>
     <section class="contact">
