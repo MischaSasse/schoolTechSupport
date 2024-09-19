@@ -22,11 +22,20 @@
     </section>
 </header>
 <aside class="aside1">
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
+    <h2>Notes:</h2>
+    <section>
+        <form id="form">
+            <input type="text" id="input1" placeholder="What's on your mind?">
+            <!--Een button een type="button" geven. Anders herlaadt de pagina bij elke onclick. Heeft even geduurd ;)-->
+            <button id="addButton" onclick="storeInput()" type="button">Add +</button>
+        </form>
+    </section>
+    <section class="notes1">
+        <ul id="ulist">
+
+        </ul>
+    </section>
+
 
 </aside>
 
@@ -47,20 +56,21 @@
         <button>Click Me!</button>
     </section>
 </main>
-<aside class="aside2">
+<aside id="aside2">
     <ul>
         <li>1</li>
         <li>2</li>
         <li>3</li>
     </ul>
+    <button onclick="changeColor()" id="colorButton">Change Color</button>
 </aside>
 <footer>
     <section class="contact">
         <p>Contact</p>
         <p>+31 12345678</p>
     </section>
-    <section class="linkfooter">
-        <a href="https://github.com/Damien-Code">Github</a>
+    <section>
+        <a href="https://github.com/Damien-Code" target="_blank">Github</a>
     </section>
 </footer>
 </body>

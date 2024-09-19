@@ -12,6 +12,7 @@ body{
                    / 0.2fr 0.6fr 0.2fr;
     height: 100vh;
     gap: 1rem;
+    font-family: Baskerville;
 }
 
 header{
@@ -39,11 +40,40 @@ header{
 
 .aside1 {
     grid-area: aside1;
-    background-color: steelblue;
+    background-color: teal;
     padding: 1rem;
     list-style-position: inside;
 }
 
+.aside1 h2 {
+    text-align: center;
+    background-color: linen;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+#input {
+    height: 4rem;
+    width: 70%;
+    font-size: 1.125rem;
+    margin: 10px 5px 0px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+#button {
+    width: calc(30% - 0.85rem);
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.notes1 {
+    margin-top: 2rem;
+    height: 20rem;
+    background-color: linen;
+    border-radius: 15px;
+}
 main {
     grid-area: main;
     background-color: steelblue;
@@ -54,9 +84,9 @@ main section {
     margin-bottom: 15%;
 }
 
-.aside2 {
+#aside2 {
     grid-area: aside2;
-    background-color: steelblue;
+    background-color: teal;
     padding: 1rem;
     list-style-position: inside;
 }
