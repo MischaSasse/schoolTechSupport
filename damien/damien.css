@@ -17,7 +17,7 @@ body{
 
 header{
     grid-area: header;
-    background-color: steelblue;
+    background-color: teal;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,13 +50,12 @@ header{
     text-align: center;
     background-color: linen;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 #input1 {
     height: 4rem;
     width: 65%;
     font-size: 1rem;
-    margin: 10px 5px 0px 0px;
     border-radius: 20px;
     border: none;
 }
@@ -67,13 +66,17 @@ header{
     align-items: center;
 }
 
+#input1 {
+    background-color: linen;
+}
+
 #addButton {
     width: calc(30% - 0.85rem);
     height: 4rem;
     border-radius: 25%;
     border: none;
     font-size: 1rem;
-    background-color: steelblue;
+    background-color: indianred;
 }
 
 .buttons {
@@ -81,24 +84,27 @@ header{
     display: flex;
     justify-content: space-between;
 }
-#deleteButton {
-    width: 45%;
-    height: 2rem;
-}
-#removeButton {
-    width: 45%;
-    height: 2rem;
 
+
+#deleteButton, #removeButton {
+    width: 45%;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    background-color: indianred;
 }
+
 .notes1 {
     margin-top: 2rem;
     height: 20rem;
     background-color: linen;
     border-radius: 15px;
+    overflow: scroll;
 }
 main {
     grid-area: main;
-    background-color: steelblue;
+    background-color: linen;
     padding: 1.5rem;
 }
 
@@ -118,6 +124,25 @@ footer {
     justify-content: space-between;
     align-items: center;
     grid-area: footer;
-    background-color: steelblue;
+    background-color: teal;
     padding: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        grid-template: "header header header" 0.1fr
+                   "aside1 main aside2" 1fr
+                   "aside1 footer footer" 0.1fr
+                    / 0.2fr 0.6fr 0.2fr;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        grid-template: "header header" 0.1fr
+                       "main main" 1fr
+                       "aside1 aside2" 0.5fr
+                       "footer footer" 0.1fr
+        / 0.5fr 0.5fr;
+
+    }
 }

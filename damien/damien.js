@@ -16,7 +16,7 @@ function storeInput() {
     const input = document.getElementById("input1");
     const value = input.value;
     // console.log(list);
-    if(list.length >= 10) {
+    if(list.length == 10) {
         return //msNote: added return, the moment the array hits 10, nothing else will happen
     }
     
