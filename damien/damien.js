@@ -11,7 +11,7 @@ function changeColor() {
 }
 
 
-let list = [ ];
+let list = [];
 
 
 // addButton werkte niet als functie. Veranderd naar storeInput en toen werkte het wel.
@@ -52,7 +52,18 @@ function clear() {
 }
 
 function removeAll(){
-    list = [ ]
+    list = []
     clear();
     showInput();
+}
+
+test()
+function test() {
+    for (let x = 0; x < 5; x++) {
+        if (x !== 3) {
+            console.log("Hi");
+        }
+        console.log(x);
+    }
+
 }
